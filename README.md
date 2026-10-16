@@ -43,3 +43,15 @@ public void Sort(Comparison<T> comparison)
 - The `+=` operator can be used to add a method reference.
 - Calling `Invoke` (or using the shorthand syntax) executes all methods in the order they were added.
 - They are best suited for methods that return `void`.
+
+### <ins>Predicate (System)</ins>
+
+#### Represents a method that takes an object of type `T` and returns a boolean value.
+
+```CSharp
+public delegate bool Predicate<in T>(T obj);
+```
+
+### <ins>Predicate - Exemple Problem</ins>
+
+#### Write a program that removes from a list of products only those whose minimum price is 100.
