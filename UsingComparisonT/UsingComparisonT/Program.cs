@@ -10,7 +10,9 @@ class Program
         list.Add(new Product("Notebook", 1200));
         list.Add(new Product("Tablet", 450));
 
-        list.Sort(CompareProducts);
+        Comparison<Product> comp = CompareProducts;
+        
+        list.Sort(comp);
 
         foreach(Product p in list)
         {
