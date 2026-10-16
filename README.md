@@ -20,3 +20,19 @@
 ```CSharp
 public void Sort(Comparison<T> comparison)
 ```
+
+### <ins>Delegates</ins>
+
+#### A reference (with type-safe) to one or more methods.
+- Is a reference type.
+
+#### Common use cases:
+- Flexible and extensible communication between objects (events/callbacks).
+
+#### Parameterizing operations with methods (functional programming).
+
+#### Predefined Delegates:
+
+- Action
+- Func
+- Predicate
