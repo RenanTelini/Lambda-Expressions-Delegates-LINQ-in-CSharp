@@ -36,3 +36,10 @@ public void Sort(Comparison<T> comparison)
 - Action
 - Func
 - Predicate
+
+### <ins>Multicast Delegates</ins>
+
+- Delegates that hold references to more than one method.
+- The `+=` operator can be used to add a method reference.
+- Calling `Invoke` (or using the shorthand syntax) executes all methods in the order they were added.
+- They are best suited for methods that return `void`.
