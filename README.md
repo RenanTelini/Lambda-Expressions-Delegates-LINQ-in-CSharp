@@ -52,6 +52,15 @@ public void Sort(Comparison<T> comparison)
 public delegate bool Predicate<in T>(T obj);
 ```
 
-### <ins>Predicate - Exemple Problem</ins>
+### <ins>Predicate - Example Problem</ins>
 
 #### Write a program that removes from a list of products only those whose minimum price is 100.
+
+### <ins>Action (System)</ins>
+
+#### Action (System)
+ - Represents a void method that accepts zero or more arguments.
+
+### <ins>Action - List.ForEach - Example Problem</ins>
+
+#### Create a program that increases the price of each product in a list by 10%.
