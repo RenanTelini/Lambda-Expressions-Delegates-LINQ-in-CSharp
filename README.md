@@ -89,3 +89,23 @@ Result: 4 6 8
 ### <ins>Func - Example Problem</ins>
 
 #### Write a program that, given a list of products, calculates the sum of the prices of only those products whose names start with "T".
+
+### <ins>LINQ - Language Integrated Query</ins>
+
+#### LINQ
+
+#### A set of technologies based on integrating query capabilities directly into the C# language.
+
+- Operations invoked directly on collections.
+- Queries are first-class objects.
+- Compiler support and IDE IntelliSense.
+
+#### Namespace: System.Linq
+
+#### Provides several query operations, whose parameters are typically lambda expressions or SQL-like query syntax expressions.
+
+#### You need to do three things to use LINQ collections:
+
+- Create a data source (collection, array, I/O resource).
+- Define the query.
+- Execute the query (foreach or a terminal operation).
