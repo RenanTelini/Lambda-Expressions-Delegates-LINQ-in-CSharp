@@ -64,3 +64,24 @@ public delegate bool Predicate<in T>(T obj);
 ### <ins>Action - List.ForEach - Example Problem</ins>
 
 #### Create a program that increases the price of each product in a list by 10%.
+
+### <ins>Func (System)</ins>
+
+#### Func (System)
+- Represents a method that accepts zero or more arguments and returns a value
+
+### <ins>Func with Select (LINQ) - Example Problem</ins>
+
+#### Write a program that takes a list of products and generates a new list containing the product names in uppercase.
+
+#### <strong>Note on the `Select` Method</strong>
+- The `Select` method (part of LINQ) applies a function to every element in a collection, thereby generating a new collection of type `IEnumerable`.
+
+#### Example:
+```CSharp
+List<int> numbers = new List<int> { 2, 3, 4 };
+IEnumerable<int> newList = numbers.Select(x => 2 * x);
+Console.WriteLine(string.Join(" ", newList));
+
+Result: 4 6 8
+```
