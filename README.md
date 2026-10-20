@@ -151,3 +151,27 @@ var r3 =
         CategoryName = p.Category.Name
     };
 ```
+
+### <ins>LINQ - Example Problem</ins>
+
+#### Write a program to read a set of products from a .csv file (assume that there is at least one product). Then, display the average price of the products. Finally, display the names of the products whose prices are below the average, in descending order.
+
+#### Example:
+
+#### <strong>Input file:</strong>
+
+Tv,900.00<br>
+Mouse,50.00<br>
+Tablet,350.50<br>
+HD Case,80.90<br>
+Computer,850.00<br>
+Monitor,290.00
+
+#### <strong>Execution:</strong>
+
+Enter full file path: c:\temp\in.txt<br>
+Average price: 420.23<br>
+Tablet<br>
+Mouse<br>
+Monitor<br>
+HD Case
