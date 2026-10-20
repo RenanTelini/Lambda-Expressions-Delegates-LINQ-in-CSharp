@@ -175,3 +175,33 @@ Tablet<br>
 Mouse<br>
 Monitor<br>
 HD Case
+
+### <ins>LINQ - Programming Challenge</ins>
+
+#### Write a program to read employee data (name, email, and salary) from a .csv file.
+
+#### Then, display the email addresses of employees whose salaries are higher than a given amount provided by the user, sorted in alphabetical order.
+
+#### Also, display the total salaries of employees whose names start with the letter 'M'.
+
+#### LINQProgrammingChallenge - UML:
+
+<img src="Imagens\LINQProgrammingChallenge - UML.png"  alt="LINQProgrammingChallenge - UML">
+
+#### Example:
+
+#### <strong>Input file:</strong>
+Maria,maria@gmail.com,3200.00<br>
+Alex,alex@gmail.com,1900.00<br>
+Marco,marco@gmail.com,1700.00<br>
+Bob,bob@gmail.com,3500.00<br>
+Anna,anna@gmail.com,2800.00<br>
+
+#### <strong>Execution:</strong>
+Enter full file path: <strong>c:\temp\in.csv</strong><br>
+Enter salary: <strong>2000.00</strong><br>
+Email of people whose salary is more than 2000.00:<br>
+anna@gmail.com<br>
+bob@gmail.com<br>
+maria@gmail.com<br>
+Sum of salary of people whose name starts with 'M': 4900.00<br>
