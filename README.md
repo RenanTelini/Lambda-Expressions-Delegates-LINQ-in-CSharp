@@ -109,3 +109,45 @@ Result: 4 6 8
 - Create a data source (collection, array, I/O resource).
 - Define the query.
 - Execute the query (foreach or a terminal operation).
+
+### <ins>LINQ with Lambda, a syntax similar to SQL</ins>
+
+#### When you use LINQ with Lambda expressions, you noticed that they has a syntax similar to SQL, and one can be substituted for the other.
+
+#### Example:
+
+#### LINQ with Lambda expression:
+
+```CSharp
+var r2 = 
+    products.Where(p => p.Category.Name == "Tools")
+    .Select(p => p.Name);
+
+var r3 = products.Where(p => p.Name[0] == 'C')
+    .Select(
+    p => new 
+        { 
+            p.Name, 
+            p.Price, 
+            CategoryName = p.Category.Name 
+        }
+    );
+```
+
+#### Syntax similar to SQL:
+```CSharp
+var r2 =
+    from p in products
+    where p.Category.Name == "Tools"
+    select p;
+
+var r3 =
+    from p in products
+    where p.Name[0] == 'C'
+    select new
+    {
+        p.Name,
+        p.Price,
+        CategoryName = p.Category.Name
+    };
+```
